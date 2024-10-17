@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CDE700;
+    font-family: monospace;
+    margin: 0;
+
+}
+
+button {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+em {
+    background-color: #f896d8;
+}
+
+br {
+    content: "";
+    display: block;
+    margin-top: 12px;
+}
+
+h2 {
+/*Positioning stuff*/
+    position: relative;
+    top: 16px;
+/*Box model stuff*/
+    max-width:fit-content;
+    padding: 6px 18px 6px 18px;
+    background-color: black;
+/*Typography stuff*/
+    font-size: 1rem;
+    color: white;
+}
+
+h3 {
+/*Positioning stuff*/
+    position: relative;
+    left: 18px;
+    top: 20px;
+/*Box model stuff*/
+    max-width:fit-content;
+    margin-left: 18px;
+    padding: 6px 48px 6px 48px;
+    background-color: black;
+/*Typography stuff*/
+    color: white;
+}
+
+.menu-content {
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+.collapsible-menu {
+    background-color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header {
+}
+
+.position {
+    position: relative; 
+    height: 0;
+    display: flex;
+    width: inherit;
+    margin: 0 21px 0 21px;
+}
+
+.flex__parent {
+/*Display stuff*/
+    display: flex;
+    flex-wrap: wrap;
+/*Box model stuff*/
+    min-width: min-content;
+    margin: 12px;
+    padding: 6px;
+    border: 3px solid black;
+    background-color: #fff;
+/*Typography stuff*/
+    font-size: 2.5rem;
+    color: #fff;
+/*Miscellaneous*/
+    /* background-color: lightblue; */
+}
+
+.flex__parent-parent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    padding: 6px;
+    font-size: 2.5rem;
+    color: #fff;
+    
+}
+
+.flex__child {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.image {
+    background-image: url(../images/robot-run.gif);
+    background-size: cover;
+    border: 1px dotted gray;
+    height: 60px;
+    position: absolute; 
+    width: 60px; 
+}
+
+.green {
+    background-color: #CDE700;
+}
+/* .green {
+    background-image: url(../images/robot-run.gif);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    position: relative;
+    background-color: none;
+    border: dotted gray;
+} */
+
+.blue {
+    background-color: #10439F;
+}
+
+.red {
+    background-color: #874CCC;
+}
+
+.yellow {
+    background-color: #C65BCF;
+}
+
+.indigo {
+    background-color: #F27BBD;
+    display: none;
+}
+
+.pink {
+    display: none;
+}
+.flex__justify-flex-end {
+    justify-content: flex-end;
+}
+
+.flex__justify-center {
+    justify-content: center;
+}
+
+.flex__justify-space-between {
+    justify-content: space-between;
+}
+
+.flex__justify-space-around {
+    justify-content: space-around;
+}
+
+.flex__row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex__multiple {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__column-reverse {
+    flex-direction: column-reverse;
+}
+
+.header__page-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.main-content   {
+    padding: 12px;
+    background-color: #f896d8;
+}
+
+.main-content__article {
+    background-color: #fff;
+    border-radius: 24px;
+    border: 3px solid black;
+    font-size: 1rem;
+    margin: 18px;
+    padding: 24px;
+}
+
+.main-content__post {
+/*Positioning stuff*/
+    position: relative;
+    left: calc(50% - 75px);
+/*Box model stuff*/
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    padding: 16px;
+    background-image: url(../images/robot-preview.png);
+    background-size: cover;
+/*Manipulations stuff*/
+    transform: scaleX(-1);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: image;
+}
+
+@keyframes image {
+    0%      {opacity: 0%;}
+    100%    {opacity: 100%;}
+}
+
+.main-content__post:hover {
+    cursor: pointer;
+}
+
+.main-content__post:active {
+    background-image: url(../images/robot-idle.gif);
+    background-size: cover;
+    margin: 8px;
+    padding: 16px;
+    transform: scaleX(-1);
+}
+
+.button__flex {
+    padding: 12px 32px;
+    width: auto;
+    border-radius: 40px;
+}
+
+#flex-direction__row {
+
+}
+
+.main-content__flex {
+
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {
+        left: 0px; 
+        top: 20px;
+    }
+    100% {
+        left: calc(3 * 60px);
+        top: 20px
+    }
+}
+
+.position__child {
+    width: 60px;
+    height: 60px;
+}
+
+.flex-end-test {
+    justify-content: flex-end;
+}
+
+.flex-space-around-test {
+    justify-content: space-around;
+    width: inherit;
+}
+.main-content__flex-end {
+    position: relative;
+    animation-name: flex-end;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes flex-end {
+    0%   {
+        right: calc(3 * 60px);
+        top: 20px;
+    }
+    100% {
+        
+        right: 0px; 
+        top: 20px;
+    }
+  }
+
+.flex-center-test {
+    justify-content: center;
+}
+
+  .main-content__flex-center {
+
+    position: relative;
+    animation-name: flex-center;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes flex-center {
+      0%   {
+          right: calc((2 * 60px) - 30px); 
+          top: 20px;
+      }
+      100% {
+          right: -90px;
+          top: 20px;
+      }
+  }
+
+.main-content__flex-space-between {
+    position: relative;
+  animation-name: space-between;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes space-between {
+    0%   {left: 0%; top:20px;}
+    100% {left: calc(100% - 60px); top: 20px;}
+}
+
+.main-content__flex-space-around {
+    position: relative;
+  animation-name: space-around;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes space-around {
+    0%   {left:0%; top:20px;}
+    100% {left: calc(100% - 25%); top: 20px;}
+}
+
+.main-content__flex-reverse {
+    animation-name: row-reverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+}
+
+@keyframes row-reverse {
+    0%   {right:0px; top:0px; filter: blur(0px);}
+    100% {right: calc(3 * 60px); filter: blur(0px);}
+}
+
+
+.main-content__flex-column {
+    
+    animation-name: column;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes column {
+      0%   {top:0px; left: 0px;}
+      100%  {top: calc(3 * 60px); left: 0px;}
+  }
+
+.main-content__flex-column-reverse {
+    
+    animation-name: column-reverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes column-reverse {
+      0%   {bottom:0px; left: 0px;}
+      100%  {bottom: calc(3 * 60px); left: 0px;}
+  }
+
+/* .flex-direction__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background-color: blueviolet;
+} */
+
+/* .flex-direction__row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background-color: blueviolet;
+} */
+
+
+
+
+
+
+
+
+/* .flex-direction__column {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 0;
+    width: 75px;
+    height: 150px;
+    background-color: blueviolet;
+} */
+
+
+/* .child {
+    width: 50px;
+    height: 50px;
+    background-color:blueviolet;
+} */
+
+
+.button__flex:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.paragraph {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.paragraph__comment {
+    font-size: 0.75rem;
+    color: rgb(45, 45, 45);
+    margin: 6px;
+}
+
+.paragraph__flex {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.button {
+    padding: 12px 32px;
+    width: auto;
+    border-radius: 40px;
+}
+
+.section {
+    margin: 0;
+    flex-direction: row;
+} 
+
+
+.button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    padding: 6px;
+    background-color: antiquewhite;
+    margin-bottom: 0;
+}
