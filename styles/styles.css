@@ -88,7 +88,7 @@ h3 {
             opacity: 0.6;
             transition: 0.3s;
         }
-        
+
     .nope {
         border: none;
         background-color: none;
@@ -530,7 +530,9 @@ h3 {
 
 .footer {
     width: 100%;
-    padding: 6px;
+    padding: 24px;
     background-color: antiquewhite;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
