@@ -8,7 +8,18 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__page-title">Flexbox-game</h1>
+        <div class="menu">
+            <a href="./index.html">
+                <button type="button" class="menu__content home">home</button>
+            </a>
+            <a href="./game.html">
+                <button type="button" class="menu__content flexbox">flexbox game</button>
+            </a>
+            <a href="./contact.html">
+                <button type="button" class="menu__content contact">contact</button>
+            </a>
+        </div>
+        <h1 class="header__page-title">Flexbox Game</h1>
     </header>
 
     <main class="main-content">
@@ -22,10 +33,9 @@
                 Try it out and see if you can handle it:
             </p>
         </div>
-        <button class="button">Press me!</button>
-        <p class="paragraph__comment">
-            Good job!
-        </p>
+
+        <button class="button" onclick="alert('Good Job!')">Press me!</button>
+        
         <br>
         <p class="paragraph">
             Now, press the button, if you think that you're ready?
@@ -33,13 +43,10 @@
         <a href="./game.html"><button class="button">
             Let the games begin!
         </button></a>
-            
-        <p class="paragraph__comment">
+            <br>
+        <button class="nope" type="button" onclick="alert('too bad... pick again')">
             I don't really feel like it...
-        </p>
-        <p class="paragraph__comment">
-            too bad, pick again
-        </p>
+        </button>
 
     </main>
 

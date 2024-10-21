@@ -6,6 +6,7 @@ body {
     background-color: #CDE700;
     font-family: monospace;
     margin: 0;
+    height: 100vh;
 
 }
 
@@ -40,6 +41,10 @@ h2 {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 h3 {
 /*Positioning stuff*/
     position: relative;
@@ -54,28 +59,42 @@ h3 {
     color: white;
 }
 
-.menu-content {
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}
-.collapsible-menu {
-    background-color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    border-bottom: 3px solid #CDE700;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-}
-.collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-.collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-}
-
 .header {
+    margin-top: 12px;
 }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+        .menu__content {
+            background-color: #f896d8;
+            padding: 12px;
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu__content:hover {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        
+    .nope {
+        border: none;
+        background-color: none;
+        text-decoration: dotted;
+    }
+
 
 .hidden__parent {
     background-color: rgba(240, 255, 255, 0.331);
