@@ -8,18 +8,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="menu">
-            <a href="./index.html">
-                <button type="button" class="menu__content home">home</button>
-            </a>
-            <a href="./game.html">
-                <button type="button" class="menu__content flexbox">flexbox game</button>
-            </a>
-            <a href="./contact.html">
-                <button type="button" class="menu__content contact">contact</button>
-            </a>
-        </div>
         <h1 class="header__page-title">Flexbox Game</h1>
+        <div class="topnav">
+            <a class="active" href="./index.html">home</a>
+            <a href="./game.html">flexbox game</a>
+            <a href="./contact.html">contact</a>
+        </div>
     </header>
 
     <main class="main-content">
@@ -44,9 +38,9 @@
             Let the games begin!
         </button></a>
             <br>
-        <button class="nope" type="button" onclick="alert('too bad... pick again')">
+        <a class="nope" onclick="alert('too bad... pick again')">
             I don't really feel like it...
-        </button>
+        </a>
 
     </main>
 
