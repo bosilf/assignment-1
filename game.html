@@ -17,154 +17,114 @@
     </header>
 
     <main class="main-content">
-        <h3>...</h3>
-        <div class="main-content__article">
-            display: flex;
-        </div>
-        
-        <div class="main-content__post"></div>
-        <h3>...</h3>
-        <div class="main-content__article">
-            Hi, I am Flex!<br>
-            I'll show you what I can do!
-        </div>
-        <br>
-        <h3>FLEX</h3>
-        <div class="main-content__article">
-            first off!<br> <em>flex-direction: row;</em></div>
-            
-        <div class="hidden__parent">
-            <div class="hidden__flex image"></div>
-        </div>
-            
-        <div class="flex__parent">
-            <div class="flex__child green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
+        <section class="section">
+            <h3>...</h3>
+            <div class="main-content__article">
+                display: flex;
+            </div>
+        </section>
+        <section class="section">
+            <div class="main-content__image"></div>
+            <h3>...</h3>
+            <div class="main-content__article">
+                Hi, I am Flex!<br>
+                I'll show you what I can do!
+            </div>
+        </section>
+        <section class="section">
+            <h3>FLEX</h3>
+            <div class="main-content__article">
+                first off!<br> <em>flex-direction: row;</em>
+            </div>
+        </section>
+        <section class="section">   
+            <div class="hidden__parent">
+                <div class="hidden__flex image"></div>
+            </div>
+                
+            <div class="flex__parent">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+                <div class="flex__child pink">6</div>
+            </div>
+        </section>
+        <section class="section">
+            <h3>FLEX</h3>
+            <div class="main-content__article">
+                <em>flex-direction: row;</em> is actually the default flex-direction, so you don't need to specify it.
+                <br>
+                To spice things up a little you can <em>justify-content</em>. It decides how items align along the main axis of the current line of the flex container (aka flex-parent).
+                <br>
+                Here are some different justify-content syntaxes on a flex-direction: row;
+            </div>  
+        </section>
+        <section class="section">
+            <h2>justify-content: flex-end;</h2>
+            <div class="hidden__parent hidden__end">
+                <div class="hidden__flex-end image"></div>
+            </div>
 
-        <h3>FLEX</h3>
-        <div class="main-content__article">
-            <em>flex-direction: row;</em> is actually the default flex-direction, so you don't need to specify it.
-            <br>
-            To spice things up a little you can <em>justify-content</em>. It decides how items align along the main axis of the current line of the flex container (aka flex-parent).
-            <br>
-            Here are some different justify-content syntaxes on a flex-direction: row;
-        </div>  
+            <div class="flex__parent flex__justify-flex-end">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+                <div class="flex__child pink">6</div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>justify-content: center;</h2>
+            <div class="hidden__parent hidden__center">
+                <div class="hidden__child hidden__flex-center image"></div>
+                <div class="hidden__child second"></div>
+                <div class="hidden__child third"></div>
+                <div class="hidden__child fourth"></div>
+                <div class="hidden__child fifth"></div>
+                <div class="hidden__child sixth"></div>
+            </div>
 
-        <h2>justify-content: flex-end;</h2>
-        <div class="hidden__parent hidden__end">
-            <div class="hidden__flex-end image"></div>
-        </div>
+            <div class="flex__parent flex__justify-center">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+                <div class="flex__child pink">6</div>
+            </div>
+        </section>
 
-        <div class="flex__parent flex__justify-flex-end">
-            <div class="flex__child green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
+        <section class="section">
+            <h2>justify-content: space-between;</h2>
+            <div class="hidden__parent">
+                <div class="hidden__flex-space-between image"></div>
+            </div>
 
-        <h2>justify-content: center;</h2>
-        <div class="hidden__parent hidden__center">
-            <div class="hidden__child hidden__flex-center image"></div>
-            <div class="hidden__child second"></div>
-            <div class="hidden__child third"></div>
-            <div class="hidden__child fourth"></div>
-            <div class="hidden__child fifth"></div>
-            <div class="hidden__child sixth"></div>
-        </div>
+            <div class="flex__parent flex__justify-space-between">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+                <div class="flex__child pink">6</div>
+            </div>
+        </section>
 
-        <div class="flex__parent flex__justify-center">
-            <div class="flex__child green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
-        
-        <h2>justify-content: space-between;</h2>
-        <div class="hidden__parent">
-            <div class="hidden__flex-space-between image"></div>
-        </div>
-
-        <div class="flex__parent flex__justify-space-between">
-            <div class="flex__child green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
-
+        <section class="section">
         <h2>justify-content: space-around;</h2>
-        <div class="hidden__parent hidden__space-around">
-            <div class="hidden__child hidden__flex-space-around image"></div>
-            <div class="hidden__child second"></div>
-            <div class="hidden__child third"></div>
-            <div class="hidden__child fourth"></div>
-            <div class="hidden__child fifth"></div>
-            <div class="hidden__child sixth"></div>
-        </div>
-
-        <div class="flex__parent flex__justify-space-around">
-            <div class="flex__child green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
-        
-        <h3>FLEX</h3>
-        <div class="main-content__article">
-            <em>flex-direction: row;</em> is actually the default flex-direction, so you don't need to specify it.
-            <br>
-            But do not worry, for you with a more adventureous taste there is also <em>flex-direction: row-reverse;</em>
-        </div> 
-        
-        <div class="flex__parent flex__row-reverse">
-            <div class="flex__child main-content__flex-reverse green">1</div>
-            <div class="flex__child blue">2</div>
-            <div class="flex__child red">3</div>
-            <div class="flex__child yellow">4</div>
-            <div class="flex__child indigo">5</div>
-            <div class="flex__child pink">6</div>
-        </div>
- 
-        <h3>FLEX</h3>
-        <div class="main-content__article">
-            Then there's also the lovely <em>flex-direction: column;</em>
-            <br>
-            and <em>flex-direction: column-reverse;</em>
-        </div>
-
-        <div class="hidden__multiple">
-            <div class="hidden__parent hidden__column">
-                <div class="hidden__child hidden__flex-column image"></div>
+            <div class="hidden__parent hidden__space-around">
+                <div class="hidden__child hidden__flex-space-around image"></div>
                 <div class="hidden__child second"></div>
                 <div class="hidden__child third"></div>
                 <div class="hidden__child fourth"></div>
                 <div class="hidden__child fifth"></div>
                 <div class="hidden__child sixth"></div>
             </div>
-            <div class="hidden__parent hidden__column-reverse">
-                <div class="hidden__child main-content__column image"></div>
-                <div class="hidden__child second"></div>
-                <div class="hidden__child third"></div>
-                <div class="hidden__child fourth"></div>
-                <div class="hidden__child fifth"></div>
-                <div class="hidden__child sixth"></div>
-            </div>
-        </div>
 
-        <div class="flex__multiple">
-            <div class="flex__parent flex__column">
+            <div class="flex__parent flex__justify-space-around">
                 <div class="flex__child green">1</div>
                 <div class="flex__child blue">2</div>
                 <div class="flex__child red">3</div>
@@ -172,16 +132,79 @@
                 <div class="flex__child indigo">5</div>
                 <div class="flex__child pink">6</div>
             </div>
+        </section>
+        <section class="section">
+            <h3>FLEX</h3>
+            <div class="main-content__article">
+                <em>flex-direction: row;</em> is actually the default flex-direction, so you don't need to specify it.
+                <br>
+                But do not worry, for you with a more adventureous taste there is also <em>flex-direction: row-reverse;</em>
+            </div> 
+        </section>
 
-            <div class="flex__parent flex__column-reverse">
-                <div class="flex__child green">1</div>
+        <section class="section">
+            <div class="flex__parent flex__row-reverse">
+                <div class="flex__child main-content__flex-reverse green">1</div>
                 <div class="flex__child blue">2</div>
                 <div class="flex__child red">3</div>
                 <div class="flex__child yellow">4</div>
                 <div class="flex__child indigo">5</div>
                 <div class="flex__child pink">6</div>
             </div>
-        </div>
+        </section>
+        
+        <section class="section">
+            <h3>FLEX</h3>
+            <div class="main-content__article">
+                Then there's also the lovely <em>flex-direction: column;</em>
+                <br>
+                and <em>flex-direction: column-reverse;</em>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="hidden__multiple">
+                <!-- Column, hidden except for animation -->
+                <div class="hidden__parent hidden__column">
+                    <div class="hidden__child hidden__flex-column image"></div>
+                    <div class="hidden__child second"></div>
+                    <div class="hidden__child third"></div>
+                    <div class="hidden__child fourth"></div>
+                    <div class="hidden__child fifth"></div>
+                    <div class="hidden__child sixth"></div>
+                </div>
+                <!-- Column-reverse, hidden except for animation -->
+                <div class="hidden__parent hidden__column-reverse">
+                    <div class="hidden__child main-content__column image"></div>
+                    <div class="hidden__child second"></div>
+                    <div class="hidden__child third"></div>
+                    <div class="hidden__child fourth"></div>
+                    <div class="hidden__child fifth"></div>
+                    <div class="hidden__child sixth"></div>
+                </div>
+            </div>
+
+            <div class="flex__multiple">
+                <!-- Column, background with color and numbering -->
+                <div class="flex__parent flex__column">
+                    <div class="flex__child green">1</div>
+                    <div class="flex__child blue">2</div>
+                    <div class="flex__child red">3</div>
+                    <div class="flex__child yellow">4</div>
+                    <div class="flex__child indigo">5</div>
+                    <div class="flex__child pink">6</div>
+                </div>
+                <!-- Column-reverse, background with color and numbering -->
+                <div class="flex__parent flex__column-reverse">
+                    <div class="flex__child green">1</div>
+                    <div class="flex__child blue">2</div>
+                    <div class="flex__child red">3</div>
+                    <div class="flex__child yellow">4</div>
+                    <div class="flex__child indigo">5</div>
+                    <div class="flex__child pink">6</div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
