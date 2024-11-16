@@ -8,39 +8,36 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__page-title">Contact</h1>
+        <h1 class="header__page-title">contact</h1>
         <div class="topnav">
             <a href="./index.html">home</a>
-            <a href="./info.html">flexbox game</a>
-            <a class="topnav__active" href="./contact.html">contact</a>
+            <a href="./flexbox.html">flexbox</a>
+            <a class="topnav--active" href="./contact.html">contact</a>
         </div>
     </header>
+    <main class="contact-container">
+        <div class="contact">
+            <div class="contact-title">
+                <h2>Get in Touch</h2>
+                 <hr>
+            </div>
+        </div>
+        <form action="./contact.html" method="POST" class="contact">
 
-    <main>
-        <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+            <input type="hidden" name="access_key" value="eef2212a-7a68-4ffd-9bb3-595947a23c95">
+    
+            <input type="text" name="name" required placeholder="Your name.." class="contact">
+
+            <input type="email" name="email" required placeholder="Your email" class="contact">
+
+            <textarea name="message" required placeholder="Write your message.." class="contact"></textarea>
+                
+            <button type="submit" class="contact">Submit</button>
+        </form>
     </main>
     <footer class="footer">
-        <p>© Emelie B. Silfverberg</p>
+        © Emelie B. Silfverberg<br>
+        1st Assignment, Futuregames Frontend Programming, 2024
     </footer>
 </body>
 </html>

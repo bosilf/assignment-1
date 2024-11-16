@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__page-title">flexbox</h1>
+        <div class="topnav">
+            <a href="./index.html">home</a>
+            <a href="./flexbox.html" class="topnav--active">flexbox</a>
+            <a href="./contact.html">contact</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h3 class="main-content__title">...</h3>
+        <div class="main-content__paragraph">
+            display: flex;
+        </div>
+        
+        <div class="main-content__image"></div>
+        <h3 class="main-content__title">...</h3>
+        <div class="main-content__paragraph">
+            Hi, I am Flex!<br>
+            I'll show you what I can do!
+        </div>
+        
+        <h3 class="main-content__title">FLEX</h3>
+        <div class="main-content__paragraph">
+            First off!<br> <em>flex-direction: row;</em>
+        </div>
+           
+        <div class="flex__parent--hidden">
+            <div class="flex--animation flex__image"></div>
+        </div>
+       
+        <div class="flex__parent">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+        
+        <h3 class="main-content__title">FLEX</h3>
+        <div class="main-content__paragraph">
+            <em>flex-direction: row;</em> is actually the default flex-direction, so you don't need to specify it.
+            <br>
+            To spice things up a little you can <em>justify-content</em>. It decides how items align along the main axis of the current line of the flex container.
+            <br>
+            Here are some different examples of what a flex-direction: row; can look like:
+        </div>  
+        
+        <h2 class="main-content__title--type">
+            justify-content: flex-end;
+        </h2>
+        <div class="flex__parent--hidden flex__end">
+            <div class="flex__end--animation flex__image"></div>
+        </div>
+
+        <div class="flex__parent flex__end">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+        
+        <h2 class="main-content__title--type">
+            justify-content: center;
+        </h2>
+        <div class="flex__parent--hidden flex__center">
+            <div class="flex__child--hidden flex__center--animation flex__image"></div>
+            <div class="flex__child--hidden second"></div>
+            <div class="flex__child--hidden third"></div>
+            <div class="flex__child--hidden fourth"></div>
+            <div class="flex__child--hidden fifth"></div>
+                    </div>
+
+        <div class="flex__parent flex__center">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+       
+        <h2 class="main-content__title--type">
+            justify-content: space-between;
+        </h2>
+        <div class="flex__parent--hidden flex__space-between">
+            <div class="flex__space-between--animation flex__image"></div>
+        </div>
+
+        <div class="flex__parent flex__space-between">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+
+        <h2 class="main-content__title--type">
+            justify-content: space-around;
+        </h2>
+        <div class="flex__parent--hidden flex__space-around">
+            <div class="flex__child--hidden flex__space-around--animation flex__image"></div>
+            <div class="flex__child--hidden second"></div>                
+            <div class="flex__child--hidden third"></div>
+            <div class="flex__child--hidden fourth"></div>
+            <div class="flex__child--hidden fifth"></div>
+        </div>
+
+        <div class="flex__parent flex__space-around">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+
+        <h3 class="main-content__title">FLEX</h3>
+        <div class="main-content__paragraph">
+            Since flex-direction: row; is the default flex-direction, you don't need to specify it.
+            <br>
+            So, if you want the content in a different direction, one way you can do it is <em>flex-direction: row-reverse;</em>
+        </div> 
+
+        <div class="flex__parent--hidden flex__row-reverse">
+            <div class="flex__row-reverse--animation flex__image"></div>
+        </div>
+        <div class="flex__parent flex__row-reverse">
+            <div class="flex__child green">1</div>
+            <div class="flex__child blue">2</div>
+            <div class="flex__child red">3</div>
+            <div class="flex__child yellow">4</div>
+            <div class="flex__child indigo">5</div>
+            
+        </div>
+    
+        <h3 class="main-content__title">FLEX</h3>
+        <div class="main-content__paragraph">
+            Besides the directions row and row-reverse there is also <em>flex-direction: column;</em> and <em>flex-direction: column-reverse;</em> 
+            <br>
+            With these you can use the same justify-contents as the rows use but in columns.
+        </div>
+        
+        <div class="main-content--columns">
+            <div class="flex__parent--hidden flex__column">
+                <div class="flex__child--hidden flex__column--animation flex__image"></div>
+                <div class="flex__child--hidden second"></div>
+                <div class="flex__child--hidden third"></div>
+                <div class="flex__child--hidden fourth"></div>
+                <div class="flex__child--hidden fifth"></div>
+                            </div>
+            
+            <div class="flex__parent--hidden flex__column-reverse">
+                <div class="flex__child--hidden flex__column-reverse--animation flex__image"></div>
+                <div class="flex__child--hidden second"></div>
+                <div class="flex__child--hidden third"></div>
+                <div class="flex__child--hidden fourth"></div>
+                <div class="flex__child--hidden fifth"></div>                    
+                            </div>
+        </div>
+
+        <div class="main-content--columns">
+            <div class="flex__parent flex__column">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+                
+            </div>
+            <div class="flex__parent flex__column-reverse">
+                <div class="flex__child green">1</div>
+                <div class="flex__child blue">2</div>
+                <div class="flex__child red">3</div>
+                <div class="flex__child yellow">4</div>
+                <div class="flex__child indigo">5</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © Emelie B. Silfverberg<br>
+        1st Assignment, Futuregames Frontend Programming, 2024
+    </footer>
+</body>
+</html>
