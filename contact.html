@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <header class="header">
@@ -15,21 +16,17 @@
             <a class="topnav--active" href="./contact.html">contact</a>
         </div>
     </header>
-    <main class="contact-container">
+    <main class="contact__container">
         <div class="contact">
             <div class="contact-title">
                 <h2>Get in Touch</h2>
                  <hr>
             </div>
         </div>
-        <form action="./contact.html" method="POST" class="contact">
-
-            <input type="hidden" name="access_key" value="eef2212a-7a68-4ffd-9bb3-595947a23c95"> 
-            <!-- i dont know how to make it go to your email -->
-    
+        <form method="POST" action="mailto:emelie.bosilf@icloud.com?subject=Flexbox%20inquires" class="contact" enctype="text/plain">
             <input type="text" name="name" required placeholder="Your name.." class="contact">
 
-            <input type="email" name="email" required placeholder="Your email" class="contact">
+            <input type="email" name="email" required placeholder="Your e-mail.." class="contact">
 
             <textarea name="message" required placeholder="Write your message.." class="contact"></textarea>
                 
